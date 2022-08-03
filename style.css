@@ -1,0 +1,64 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(to bottom, black, rgb(79, 79, 79));
+}
+.container .button {
+  position: relative;
+  top: 100px;
+  left: 150px;
+}
+.container .button input {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  z-index: 10;
+  left: 80px;
+  opacity: 0;
+}
+.container .button .satu {
+  width: 300px;
+  height: 130px;
+  background-color: white;
+  position: absolute;
+  border-radius: 100px;
+}
+.container .button .dua {
+  width: 100px;
+  height: 100px;
+  background-color: rgb(22, 167, 207);
+  position: absolute;
+  z-index: 5;
+  top: 15px;
+  left: 15px;
+  border-radius: 100%;
+  transition: all 0.5s;
+}
+.container .button input:checked ~ div:nth-child(3) {
+  left: 185px;
+}
+
+.disable {
+  display: none;
+}
+
+.siang {
+  background: linear-gradient(to top, rgb(21, 56, 194), rgb(197, 63, 42));
+  transition: all 0.5s;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .container .button {
+    left: 300px;
+  }
+}
+@media (min-width: 1024px) {
+  .container .button {
+    left: 500px;
+  }
+}/*# sourceMappingURL=style.css.map */
